@@ -54,7 +54,7 @@ oc scale machineset $MACHINE_SET -n openshift-cluster-api --replicas=0
 It takes a few minutes for the node to disappear.
 
 ```shell
-oc get nodes
+oc get nodesfor i in $(oc get crd --no-headers | awk '{print $1}'); do echo $i $(oc get $i --no-headers --all-namespaces | awk '{print $1}')  ; done > allops.txt
 
 ```
 
@@ -70,4 +70,12 @@ oc get pods
 ```shell
 oc scale machineset $MACHINE_SET -n openshift-cluster-api --replicas=1
 oc delete project storage-test
+```
+
+## Bonus
+
+This commands prints all the CRDs with an instance. This roughly correspnd to the all the operator configurations at install time
+
+```shell
+for i in $(oc get crd --no-headers | awk '{print $1}'); do echo $i $(oc get $i --no-headers --all-namespaces | awk '{print $1}')  ; done > allops.txt
 ```

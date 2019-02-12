@@ -1,0 +1,52 @@
+alertmanagers.monitoring.coreos.com openshift-monitoring
+authenticationoperatorconfigs.authentication.operator.openshift.io cluster
+authentications.config.openshift.io cluster
+builds.config.openshift.io
+catalogsourceconfigs.marketplace.redhat.com openshift-marketplace openshift-marketplace openshift-marketplace
+catalogsources.operators.coreos.com openshift-marketplace openshift-marketplace openshift-marketplace openshift-operator-lifecycle-manager
+clusterautoscalers.autoscaling.openshift.io
+clusterdnses.dns.openshift.io default
+clusteringresses.ingress.openshift.io openshift-ingress-operator
+clusternetworks.network.openshift.io default
+clusteroperators.config.openshift.io cluster-autoscaler-operator cluster-image-registry-operator kube-controller-manager machine-api-operator machine-config-operator openshift-apiserver openshift-cluster-kube-scheduler-operator openshift-cluster-samples-operator openshift-controller-manager-operator openshift-dns-operator openshift-ingress-operator openshift-kube-apiserver-operator
+clusteroperators.operatorstatus.openshift.io openshift-service-cert-signer
+clusters.cluster.k8s.io openshift-cluster-api
+clusterserviceversions.operators.coreos.com openshift-operator-lifecycle-manager
+clusterversions.config.openshift.io version
+configs.imageregistry.operator.openshift.io instance
+configs.samples.operator.openshift.io instance
+consoles.console.openshift.io openshift-console
+controllerconfigs.machineconfiguration.openshift.io machine-config-controller
+dnses.config.openshift.io cluster
+egressnetworkpolicies.network.openshift.io
+hostsubnets.network.openshift.io ip-10-0-135-253.ec2.internal ip-10-0-157-155.ec2.internal ip-10-0-28-92.ec2.internal ip-10-0-38-96.ec2.internal ip-10-0-6-36.ec2.internal
+images.config.openshift.io cluster
+infrastructures.config.openshift.io cluster
+ingresses.config.openshift.io cluster
+installplans.operators.coreos.com openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager openshift-operator-lifecycle-manager
+kubeapiserveroperatorconfigs.kubeapiserver.operator.openshift.io instance
+kubecontrollermanageroperatorconfigs.kubecontrollermanager.operator.openshift.io cluster
+kubeletconfigs.machineconfiguration.openshift.io
+kubescheduleroperatorconfigs.kubescheduler.operator.openshift.io instance
+machineautoscalers.autoscaling.openshift.io
+machineclasses.cluster.k8s.io
+machineconfigpools.machineconfiguration.openshift.io master worker
+machineconfigs.machineconfiguration.openshift.io 00-master 00-master-ssh 00-worker 00-worker-ssh 01-master-kubelet 01-worker-kubelet master-722bad094f0c7345c5a03a3395221730 master-d6d0357b2206d97aed2e445fb38b5d01 worker-adf6e7cdeace01395235dec4401a4905
+machinedeployments.cluster.k8s.io
+machinehealthchecks.healthchecking.openshift.io
+machines.cluster.k8s.io openshift-cluster-api openshift-cluster-api openshift-cluster-api openshift-cluster-api openshift-cluster-api
+machinesets.cluster.k8s.io openshift-cluster-api openshift-cluster-api openshift-cluster-api openshift-cluster-api openshift-cluster-api openshift-cluster-api
+mcoconfigs.machineconfiguration.openshift.io
+netnamespaces.network.openshift.io code-ready default kube-public kube-system openshift openshift-apiserver openshift-apiserver-operator openshift-cluster-api openshift-cluster-kube-scheduler-operator openshift-cluster-machine-approver openshift-cluster-network-operator openshift-cluster-node-tuning-operator openshift-cluster-samples-operator openshift-cluster-storage-operator openshift-cluster-version openshift-config openshift-config-managed openshift-console openshift-controller-manager openshift-controller-manager-operator openshift-core-operators openshift-dns openshift-dns-operator openshift-image-registry openshift-infra openshift-ingress openshift-ingress-operator openshift-kube-apiserver openshift-kube-apiserver-operator openshift-kube-controller-manager openshift-kube-controller-manager-operator openshift-kube-scheduler openshift-machine-config-operator openshift-marketplace openshift-monitoring openshift-node openshift-operator-lifecycle-manager openshift-operators openshift-osin openshift-sdn openshift-service-cert-signer storage-test1
+networkconfigs.networkoperator.openshift.io default
+oauths.config.openshift.io cluster
+openshiftapiserveroperatorconfigs.openshiftapiserver.operator.openshift.io cluster
+openshiftcontrollermanageroperatorconfigs.openshiftcontrollermanager.operator.openshift.io instance
+operatorgroups.operators.coreos.com openshift-operator-lifecycle-manager openshift-operators
+operatorsources.marketplace.redhat.com openshift-marketplace openshift-marketplace openshift-marketplace
+prometheuses.monitoring.coreos.com openshift-monitoring
+prometheusrules.monitoring.coreos.com openshift-monitoring
+servicecertsigneroperatorconfigs.servicecertsigner.config.openshift.io instance
+servicemonitors.monitoring.coreos.com openshift-apiserver-operator openshift-kube-apiserver-operator openshift-kube-controller-manager-operator openshift-monitoring openshift-monitoring openshift-monitoring openshift-monitoring openshift-monitoring openshift-monitoring openshift-monitoring openshift-monitoring openshift-monitoring openshift-monitoring openshift-monitoring openshift-monitoring openshift-monitoring openshift-monitoring
+subscriptions.operators.coreos.com openshift-operator-lifecycle-manager
+tuneds.tuned.openshift.io openshift-cluster-node-tuning-operator
