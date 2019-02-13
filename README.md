@@ -1,4 +1,4 @@
-# Storage Pods and availability zone
+# Storage, Pods and availability zone
 
 This tutorial assuems you have provisioned a startend AWS 4.0 cluster, with 3 availability zones.
 
@@ -76,6 +76,8 @@ oc delete project storage-test
 
 This commands prints all the CRDs with an instance. This roughly correspnd to the all the operator configurations at install time
 
+type 
+
 ```shell
-for i in $(oc get crd --no-headers | awk '{print $1}'); do echo $i $(oc get $i --no-headers --all-namespaces | awk '{print $1}')  ; done > allops.txt
+for i in $(oc get crd --no-headers | awk '{print $1}'); do echo $i -n $(oc get $i --no-headers --all-namespaces | awk '{print $1 + " " + $2}') -o yaml  ; done > allops.txt
 ```
